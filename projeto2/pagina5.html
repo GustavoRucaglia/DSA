@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina5</title>
+    <style>
+        body{
+            background-color: tomato;
+            font-family: Papyruns;
+            font-size: 16px;
+        }
+        #menu{
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+        #menu ul li{
+            margin:0;
+            padding: 0;
+            border-bottom: 1px solid #CCC;
+            text-align: left;
+            list-style-type: none;
+        }
+        #menu a:link{
+            background: #f5f5f5;
+            color: #666;
+            font-weight:  bold;
+            text-decoration: none;
+            padding: 8px;
+            display: block;
+        }
+        #menu a:hover{
+            background: #f5f5f5;
+            color: #039;
+        }
+
+        .idiv{
+            height: 200px;
+            width: 400px;
+            background-color: red;
+            border: 5px solid black;
+        }
+
+        #containerTotal{
+            padding: 0px 20px 30px;
+            display: flex;
+            flex-direction:  column;
+            background-color: orange;
+        }
+        .containerDivs{ 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .demoDiv{
+            width: 30%;
+            border: 5px solid red ;
+            background-color: yellow;
+            font-weight: 600;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div:hover {
+            transform: rotate(20deg);
+        }
+        div:hover {
+            transform: rotate(20deg);
+            transform-origin: top left;
+        }
+        div:hover {
+            transform: scale(1.5, 0.8);
+        }
+        div:hover {
+            transform: skew(20deg, 10deg);
+        }
+        div:hover {
+            transform: matrix(1, -0.3, 0.1, 0,0);
+        }
+        div:hover {
+            transform: translate(50px, 100px);
+        }
+        .botao{ transition: 0.3 ease-in-out;
+            opacity: 0.2;
+        }
+        .botao:hover{opacity: 1;}
+    </style>
+</head>
+<body>
+    <h1>Curso técnico de Informatica</h1>
+    <a href="https://fieb.edu.br/" class="botao"> Fieb - ITB Jardim Belval</a>
+    <h2> Dsa2 - Professores Marienne</h2>
+    <h3> Comandos CSS Avançado - parte 1</h3>
+
+    <div id="menu">
+        <ul>
+            <li><a href="/projeto2/pagina1.html">Css básico - parte 1</a></li>
+            <li ><a href="/projeto1/pagina1.html">Css básico - parte 2</a></li>
+            <li><a href="/projeto2/pagina2.html">Css básico - parte 3</a></li>
+            <li><a href="/projeto1/pagina2.html">Css básico - parte 4</a></li>
+            <li><a href="/projeto2/pagina3.html">Exercicios de CSS</a></li>
+        </ul>
+    </div>
+
+    <div class="idiv">
+        <img src="">
+    </div>
+
+    <diV id="containerTotal">
+        <h1>Exemplo - Elemento Div</h1>
+        <div class="containerDivs">
+            <div class="demoDiv">
+                <h2>Primeiro elemento div</h2>
+                <p>Paragrafo dentro do primeiro elemento div</p>
+            </div>
+            <div class="demoDiv">
+                <h2>Segundo elemento div</h2>
+                <p>Paragrafo dentro do segundo elemento div</p>
+            </div>
+            <div class="demoDiv">
+                <h2>terceiro elemento div</h2>
+                <p>Paragrafo dentro do terceiro elemento div</p>
+            </div>
+        </div>
+    </diV>
+</body>
+</html>

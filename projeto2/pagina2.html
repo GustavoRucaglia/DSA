@@ -1,0 +1,76 @@
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Expressões regulares no HTML 5</title>
+
+<style>
+
+.container {
+width: 100px;
+height: 100px;
+background: DodgerBlue;
+flex-direction: row;
+justify-content: center;
+align-items: center; }
+
+.box {
+width:500px;
+height: 300px;
+background: Gray; }
+
+body {
+margin: 0px;
+background:DodgerBlue;}
+
+#header{
+width:auto;
+height:100px;
+background-color:DodgerBlue;}
+
+#footer{
+width:450px;
+background-color:StateBlue;
+}
+
+</style>
+</head>
+
+<body>
+    <div id="header">
+    <h1> Curso Técnico de Informática</h1>
+    <h2>DSA2 - Professora Marianne </h2>
+    </div>
+    <h3> Expressões regulares no HTML5 </h3>
+    <div class="container">
+    <br>
+    <div class="box">
+    <form action="painel_com_CSS.html" method="get">
+    <br>
+
+    <label>Insira apenas letras: </label><input type="text" pattern="[aA-zZ]+" placeholder="Apenas letras"
+    maxlength="5" required>
+    <br>
+    <label>Insira um email</label><input type="email" id="txtemall" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Exemplo: xxx@xxxx" maxlength="50" required>
+    <br>
+    <label>Insira um CPF - opção 1:</label> <input type="text" name="txtcpf" pattern="[0-9]{11}" title="Digite o CPF no formato nnnnnnnnnnn" placeholder="Exemplo 90855359849" maxlength="12" required>
+    <br>
+    <label> um CPF - opção 2: </label> <input type="text" name="txtcpf" pattern="\d{3}\.\d{3}\.\d{3}-\d(2)" title="Digite o CPF no formato nnn nnn nnn-nn" placeholder="Exemplo 269.687.308-52" maxlength="15" required>
+    <br>
+    <label>lnsira a Sigla do Estado:</label> <input type="text" id="txtsigla Estado" pattern="[A-Za-z]{2}" title="insira 2 letras para Sigla do Estado" placeholder="Exemplo: SP" maxlength="2">
+    <br>
+    <label>Insira senha simples </label><input type="password" id="txtsenha" pattern=".{8,}" title="Insira senha com no minimo & caracteres e máximo de 10 caracteres" maxlength="10" placeholder="Exemplo: 1234abcd" required>
+    <br>
+    <label>senha complexa:</label> <input type="password" id="txtsenhaComplexa" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="A senha deve conter uma letra minúscula, 1 maiúscula, 1 número e ter tamanho mínimo de 8 caracteres ou tamanho máximo de 12 caract "maxlength="12" placeholder="Exemplo Marianne123" required>
+
+<br>
+<input type="submit">
+<input type="reset">
+</form>
+</div>
+<br><br><br>
+<div id="footer">Maiores formatações somente com uso de JavaScript! (em breve) </div>
+</div>
+</html>

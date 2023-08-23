@@ -1,0 +1,80 @@
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+         <title>Comandos CSS básicos</title>
+         <style>
+         body{
+          background:Gray;
+         font-family:Courier New;
+         font-size: 16px; }
+    h1{
+      background-color: gray;
+    color:black;
+    font-size:40px;
+    }
+
+    h2{background-color: rgba(253, 149, 14, 0.979);opacity:60%;
+    text-align:center; color: rgb(250, 112, 0);
+    font-size:26px;}
+    h3{color:green;
+    text-align:center;
+    font-size:20px; 
+    border: #0000FF; }
+    h4{background-color:yellow;
+    text-align:center;
+    font-size:20px;}
+
+    p{font-family: times;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #f00;}
+
+    .borda{border: 2px dashed;
+    border-color:rgb(255, 8, 8);
+    box-sizing: border-box;
+    }
+
+    .bordacolors{
+    border:5px dotted; 
+    border-color:red green blue yellow; 
+    margin: 25px;
+    padding: 10px;
+    }
+
+    .borda5{
+    border: 10px dashed rgb(25, 25, 112); margin: 25px 50px 70px;}
+    .borderblue{
+      border: 3px solid rgb(54, 54, 177);
+    }
+    .bordainferior{
+    border-style: solid; 
+    border-color: black; 
+    border-bottom-width: 1px;
+    border-top-width: 0; 
+    border-right-width:0; 
+    border-left-width: 0;}
+    .classemodificada{
+      box-sizing: border-box;
+    }
+
+
+  </style>
+</head>
+
+<body>
+       <h1> Curso Técnico de Informática</h1>
+       <h2> DSA2 - Professora Marianne </h2>
+       <h3 class="borderblue"> Comados CSS básicos </h3>
+
+       <br>
+       <p class="classeModificada"> Este parágrafo estilo do tipo elemento HTML modificado por classe CSS chamada classeModificada </p>
+       <br>
+       <h4>Texto com cor de fundo</h4>
+
+       <p class="borda"> Texto com borda preta </p>
+       <p class="bordacolors"> Texto com borda colorida </p>
+       <p class="borda5"> Texto com borda5</p>
+       <p class="bordainferior"> Texto com borda inferior somente </p>
+       <input type="text" class="bordainferior" placeholder="Apenas letras" maxlength="5" required>
+     </body>
+</html>

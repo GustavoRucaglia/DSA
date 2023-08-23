@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieba inicio</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            background-image: linear-gradient(90deg, #910CC0 17.4%, #6723BE 37.71%, #5921BE 44.29%, #271ABD 66.67%, #0F45DA 84.06%, #0752E2 100%);
+            height: 15vh;
+            display: flex;
+            align-items: center;
+        }
+        .container-header{
+            position: absolute;
+            width: 100%;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.43);
+        }
+        .logo-fieb{
+            padding-left: 60px;
+            padding-top: 3px;
+            color: white;
+            font-size: 3.5rem;
+            width: 100px;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            position: relative;
+        }
+        .letter-E{       
+        position: absolute;
+        width: 35px;
+        height: 10px;
+        right: 10px;
+        top: 44px;
+        background: linear-gradient(267.92deg, #33F802 0%, #11DA0D 25%, #46D613 50%, #52C00F 75%, #35AE17 100%);
+        border-radius: 7px 0px;
+        }
+        .letter-E-1{       
+        position: absolute;
+        width: 35px;
+        height: 10px;
+        right: 10px;
+        top: 30px;
+        background: linear-gradient(267.92deg, #33F802 0%, #11DA0D 25%, #46D613 50%, #52C00F 75%, #35AE17 100%);
+        border-radius: 7px 0px;
+        }
+        .letter-E-2{       
+        position: absolute;
+        width: 35px;
+        height: 10px;
+        right:  10px;
+        top:    15px;
+        background: linear-gradient(267.92deg, #33F802 0%, #11DA0D 25%, #46D613 50%, #52C00F 75%, #35AE17 100%);
+         border-radius: 7px 0px;
+        }
+        .letter-B{
+            margin-left: 40px;
+        }
+        .pages{
+            margin-left: 50px;
+            margin-top: 20px;
+            font-size: large;
+            text-decoration: none;
+        }
+        .pages a{
+            text-decoration: none;
+        }
+        #button-next-page1 a{
+            text-decoration: none;
+            color: black;
+        }
+        .pages a:hover{
+            text-decoration:underline;
+        }
+        #button-next-page1 a:hover{
+            text-decoration:underline;
+        }
+        .pages a:active{
+            text-decoration:none;
+            color: #6723BE;
+        }
+        main{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .titulo-curso{
+            color: #4279dd;
+            font-size: 2.5rem;
+        }
+        .titulo{
+            color: #4279dd;
+            font-size: 1.5rem;
+        }
+        .image-begin{
+            height: 40vh;
+            width: 60vw;
+        }
+        .text-about-curse{
+            margin: 40px;
+        }
+        .menu{
+            position: absolute;
+            width: 50px;
+            height: 41px;
+            right: 8%;
+            top: 19%;
+            border: 1px solid rgba(255, 255, 255, 0.26);
+            border-radius: 8px;
+            display: flex;
+        }
+        .linemenu{
+            position: absolute;
+            width: 30px;
+            height: 0px;
+            right: 16%;
+            top: 30%;
+            border: 1.59px solid rgba(218, 213, 213, 0.601);
+            border-radius: 60px;
+        }
+        .linemenu:first-child{
+            position: absolute;
+            width: 30px;
+            height: 0px;
+            right: 16%;
+            top: 50%;
+            border: 1.59px solid rgba(220, 220, 220, 0.551);
+            border-radius: 60px;
+        }
+        .linemenu:nth-child(2){
+            position: absolute;
+            width: 30px;
+            height: 0px;
+            right: 16%;
+            top: 70%;
+            border: 1.59px solid rgba(220, 220, 220, 0.616);
+            border-radius: 60px;
+        }
+        #button-next-page1{
+            height: 30px;
+            width: 90px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            background-color: white;
+            border: 2px solid rgb(116, 231, 15);
+        }
+        #button-next-page1:hover{
+            transform: scale(1.2);
+        }
+        .elemento-fieb{
+            z-index: -1;
+            position: absolute;
+            right: 78%;
+            top: 30%;
+            height: 150px;
+            transform: rotate(180deg);
+        }
+        .elemento-fieb2{
+            z-index: -1;
+            position: absolute;
+            right: 10%;
+            top: 62.5%;
+            height: 150px;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container-header">
+            <div class="logo-fieb">
+                <div class="letter-F">F</div>
+                <div class="letter-I">I</div>
+                <div class="letter-E"></div>
+                <div class="letter-E-1"></div>
+                <div class="letter-E-2"></div>
+                <div class="letter-B">B</div>
+                <div class="letter-A">A</div>
+            </div>
+            <a href="#button-next-page1" id="link">
+                <div class="menu">
+                    <div class="linemenu"></div>
+                    <div class="linemenu"></div>
+                    <div class="linemenu"></div>
+                </div>
+            </a>
+        </div>
+    </header>
+    <main>
+            <div class="pages">
+                <span> <a href="index.html">home</a> / <a href="login.html">login</a> / <a href="professores.html">professores</a></span>
+            </div>
+            <section class="container-text">
+                <br>
+                <br>
+            <h1 class="titulo-curso">INFORMÁTICA</h1>
+            <br>
+            <br>
+            <img src="elemento-fieb.jpg" class="elemento-fieb">
+            <img src="elemento-fieb.jpg" class="elemento-fieb2">
+            <img src ="programação.jpg" class="image-begin">
+            <br>
+            <br>
+            <div class="text-about-curse">
+                <h1 class="titulo">Descrição do curso:</h1>
+                <br>
+                <p>Todos os anos, o curso capacita profissionais de excelência para o mercado de trabalho, aptos a enfrentarem as dificuldades e proporem soluções adequadas e criativas. O técnico em Informática é especializado tanto em montagem e manutenção de computadores, quanto em linguagens de programação e pode atuar em diversas áreas da Tecnologia da Informação.</p>
+            </div>
+            <br>
+            <button id="button-next-page1" ><a href="login.html">next</a></button>
+        </section>
+    </main>
+    <script>
+        const link = document.querySelector("#link");
+
+        link.addEventListener('click', (event) => {
+        event.preventDefault(); // Previne o comportamento padrão do link
+
+        const button = document.querySelector('#button-next-page1');
+        button.scrollIntoView({ behavior: 'smooth' });
+});
+
+    </script>
+</body>
+</html>

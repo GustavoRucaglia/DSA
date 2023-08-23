@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        table{
+            border-collapse: collapse;
+            background-color: white;
+            height: 40vh;
+        }
+        th{
+            padding-right: 30px;
+            padding-left: 5px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        td{
+            padding-left: 5px;
+            border: 1px solid rgb(0, 0, 0);
+        } 
+        main{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(88, 209, 61);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .titulo{
+            font-size: 2.5rem;
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .underline{
+            height: 6px;
+            width: 30vw;
+            background-color: rgb(105, 6, 203);
+            border-radius: 20px;
+        }
+        #button-next-page2{
+            height: 30px;
+            width: 90px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            border: white;
+        }
+        #button-next-page2:hover{
+            transform: scale(1.2);
+        }
+        #button-after-page{
+            height: 30px;
+            width: 90px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            margin-left: 30px;
+            border: white;
+        }
+        #button-after-page:hover{
+            transform: scale(1.2);
+        }
+        #button-next-page2 a{
+            text-decoration: none;
+            color: black;
+        }
+        #button-next-page2:hover{
+            text-decoration: underline;
+        }
+        #button-after-page a{
+            text-decoration: none;
+            color: black;
+        }
+        #button-after-page:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="titulo">Tabela de professores</h1>
+        <div class="underline"></div>
+        <br>
+        <br>
+        <div id="container-tabela">
+            <table>
+                <thead>
+                    <th>Professores</th>
+                    <th>materias</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Marieanne</td>
+                    <td>DSA2</td>
+                </tr>
+                <tr> <td>Nunes</td>
+                    <td>EMPR</td>
+                </tr>
+                <tr>
+                    <td>Nunes</td>
+                    <td>PRIT</td>
+                </tr>
+                <tr> <td>Cruz</td>
+                    <td>PBD1</td>
+                </tr>
+                <tr>
+                    <td>Silva</td>
+                    <td>PRAG</td>
+                </tr>
+                <tr> <td>Rogerio</td>
+                    <td>LIP1</td>
+                </tr>
+                <tr>
+                    <td>Adriano</td>
+                    <td>LPAP</td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+        <div>
+        <button id="button-next-page2">
+            <a href="index.html">voltar</a>
+        </button>
+        </div>
+    </main>
+    
+</body>
+</html>

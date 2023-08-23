@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos CSS básicos - parte 2</title>
+    <style>
+        .dropbtn{
+            background-color: #4CAF50;
+            color:  white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdonw{
+            position: relative;
+            display: inline-block;
+        }
+        .drop-content{
+            display: none; 
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .drop-content a{
+           color:  black;
+           padding: 12px 16px;
+           text-decoration: none;
+           display: block;
+        }
+        .drop-content a:hover{
+           background-color: #f1f1f1;
+        }
+       .dropdonw:hover .drop-content{
+        display: block;
+       }
+       .dropdonw:hover .dropbtn{
+        background-color: #3e8e41;
+       }
+       
+       a:link, a:visited{
+        background-color: #f44336;
+        color: white;
+        padding: 14px 25px;
+        text-align:  center;
+        text-decoration: none;
+        display: inline-block;
+       }
+       a:hover, a:active{background-color: red;}
+
+       ul.a{
+        list-style-type: square;
+       }
+       ul.b{
+        list-style-type: square;
+       }
+
+       ol.d{
+        list-style-type: lower-alpha;
+       }
+       .center{
+        padding: 30px 0px;
+        border: 3px solid green;
+        text-align: center;
+       }
+
+       img{ opacity: 0.50;}
+       img:hover{ opacity: 0.1;}
+    </style>
+</head>
+<body>
+    <div class="center">
+        <img src="img/fieb2.jpg" alt="FIEB" style="width: 10%;">
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"> Menu Suspenso</button>
+        <div class="drop-content">
+            <a href="#home">Home</a>
+            <a href="pagina1.html">Página 1</a>
+            <a href="pagina2.html">Página 2</a>
+        </div>
+    </div>
+    <h1> Curso Técnico de Iformática</h1>
+    <h2> DSA2 - Professora Marienne</h2>
+    <h3> Comandos CSS básicos - parte 2</h3>
+
+    <a href="pagina1.html" target="_blank">Link para pagina 1 - exercicios de revisã 2 trimestre</a>
+    <p>Lista não ordenada</p>
+    <ul class="a">
+        <li>html</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+
+    <ul class="b">
+        <li>Front-end</li>
+        <li>Back-end</li>
+        <li>FullStack</li>
+    </ul>
+    <p>Lista ordenada</p>
+        <ol class="c">
+            <li>Ensino medio</li>
+            <ol class="d">
+                <li>Ensino infatil</li>
+                <li>Ensino fundamental</li>
+                <li>Ensino medio</li>
+            </ol>
+            <li> Ensino Superior</li>
+        </ol>
+        <img src="img/fieb1.png" alt="imagem1" width="150px" height="100px">
+        <img src="img/fieb2.jpg" alt="imagem2" width="150px" height="100px">
+        <img src="img/fieb3.jpg" alt="imagem3" width="150px" height="100px">
+</body>
+</html>

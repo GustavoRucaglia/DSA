@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #main{
+         height: 100vh;
+         width: 100vw;
+         display: flex;
+         align-items: center;
+         justify-content: start;   
+        }
+        .container-formulario{
+            height: 100vh;
+            width: 50vw;
+            background-image: linear-gradient( #6C3DF2 30.73%, #8A13C2 101.32%);;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        #formulario-login{
+            margin: 50px;
+            margin-top: 100px;
+        }
+        .input{
+            margin-bottom: 30px;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            height: 19px;
+            border: white;
+        }
+        #button-enviar-login{
+            height: 30px;
+            width: 20vw;
+            margin-bottom: 30px;
+            border-radius: 10px 0px 10px 10px;
+            border: white;
+            font-size: large;
+        }
+        #button-enviar-login:hover{
+            transform: scale(1.1);
+        }
+        #button-next-page2{
+            height: 30px;
+            width: 90px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            border: white;
+        }
+        #button-next-page2:hover{
+            transform: scale(1.2);
+        }
+        #button-after-page{
+            height: 30px;
+            width: 90px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            margin-left: 30px;
+            border: white;
+        }
+        #button-after-page:hover{
+            transform: scale(1.2);
+        }
+        #button-next-page2 a{
+            text-decoration: none;
+            color: black;
+        }
+        #button-next-page2:hover{
+            text-decoration: underline;
+        }
+        #button-after-page a{
+            text-decoration: none;
+            color: black;
+        }
+        #button-after-page:hover{
+            text-decoration: underline;
+        }
+        .image-escola{
+            width: 50vw;
+            height: 90vh;
+        }
+        .underline{
+            height: 6px;
+            width: 110px;
+            background-color: rgb(6, 203, 10);
+            border-radius: 20px;
+        }
+        .link{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <main id="main">
+      <div class="container-formulario">
+        <form id="formulario-login" method="post" action="professores.html">
+            <h1>Cadastro</h1>
+            <div class="underline"></div>
+            <br>
+            <br>
+            <label>Email:</label>
+            <input type="email" id="email" name="email" class="input " required><br>
+            <label>name:</label>
+            <input type="text" id="name" name="name" class="input " required><br>
+            <label>senha:</label>
+            <input type="password" id="password" name="senha" class="input" required>
+            <br>
+            <label> confirmar senha:</label>
+            <input type="password" id="confPassword" name="Confsenha" class="input" required>
+            <br>
+            <button type="submit" id="button-enviar-login">Enviar</button>
+            <br>
+            <br>
+            <span>Caso já tenha cadastro <a href="login.html" class="link"> clique aqui</a></span>
+        </form>
+       </div>
+       <div>
+        <img src="escola-fieb.png" alt="" class="image-escola">
+       </div>
+    </main>
+    <script>
+        //declarações
+        const password = document.querySelector("#password")
+        const confPassword = document.querySelector("#confPassword")
+        const enviar = document.querySelector("#button-enviar-login")
+
+        //functions
+        function confirmarSenha(){
+            if(password.value)
+            return false
+        }
+        //eventos
+        enviar.addEventListener("click", confirmarSenha)
+    </script>
+</body>
+</html>
